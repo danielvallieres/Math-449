@@ -1,0 +1,122 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim}
+\usepackage[margin = 3 cm]{geometry}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 1]{Homework 1 \\ First due date: September 10.  \\  Due date for the second submission:  September 17.}
+
+\date{\today} 
+\maketitle 
+
+
+\begin{problem}
+Consider the set $G = \mathbb{R}$ and define a binary operation $*$ on $G$ as follows:
+$$a*b = a + b + ab.$$
+\begin{enumerate}
+\item For each of the three axioms defining a group, prove that the axiom is satisfied or explain why not. \label{one}
+\item Is the fourth axiom (commutativity) satisfied? \label{two}
+\item Is $(G,*)$ a group?  Is $(G,*)$ an abelian group? \label{three}
+\end{enumerate}
+\end{problem}
+
+\begin{proof}
+
+\end{proof}
+
+Functions are ubiquitous in mathematics.  For instance, in calculus I and calculus II, you study functions $f:I \longrightarrow \mathbb{R}$ where $I$ is an interval.  You then define what it means for a function to be continuous, differentiable, integrable and you spend quite a bit of time studying these concepts.  In calculus III, you study functions $f:D \longrightarrow \mathbb{R}$, where $D$ is a subset of $\mathbb{R}^{n}$ for $n > 1$.  Those are real-valued functions of several variables.  You also study functions of the form $f:[a,b]\longrightarrow \mathbb{R}^{n}$ which you visualize as being parametrized curves in the $n$-space and so on so forth.  In linear algebra, you study linear transformations $L:V \longrightarrow W$ which are functions from a vector space to another satisfying two properties.  In Euclidean geometry, you study isometries (functions that preserve the distance such as rotations, translations, etc) of the Euclidean plane, and so on so forth.  It is very important to understand functions, and the goal of this homework assignment is to review the mathematical concept of a function which you saw in  Math 330.
+
+Recall that a function consists of three things:  a domain, a codomain and a rule that associates to every element in the domain a \emph{unique} element in the codomain.  One usually says:  Let $f$ be a function from $A$ to $B$, which means that $A$ is the domain, $B$ the codomain and $f$ represents the rule.  Such a function is denoted by
+$$f:A \longrightarrow B $$
+and if $a \in A$, then the unique element in $B$ corresponding to $a$ is denoted by $f(a)$.  This latter element $f(a)$ is often referred to as "$f$ evaluated at $a$".  We will have to get comfortable thinking about abstract functions as above.  
+
+For instance, what does it mean for two functions $f$ and $g$ to be equal?  First, they have to have the same domain and codomain.  They must also have the same rule.  This means that both $f$ and $g$ are functions from $A$ to $B$, say, and we also need that for all $a \in A$
+$$f(a) = g(a). $$
+
+Recall also the following definitions from Math 330 (and also from calculus most likely)
+\begin{enumerate}
+\item A function $f:A \longrightarrow B$ is called injective (or one-to-one) if given any $a_{1},a_{2} \in A$ such that $f(a_{1}) = f(a_{2})$, one has $a_{1} = a_{2}$.
+\item A function $f:A \longrightarrow B$ is called surjective (or onto) if given any $b \in B$, there exists $a \in A$ such that $f(a) = b$.
+\item A function $f:A \longrightarrow B$ is called bijective (or a one-to-one correspondence) if it is both injective and surjective.
+\end{enumerate}
+
+\begin{problem}
+Show that a function $f:A \longrightarrow B$ is bijective if and only if given any $b \in B$, there exists a \emph{unique} $a \in A$ such that $f(a) = b$.
+\end{problem}
+
+\begin{proof}
+
+\end{proof}
+
+Recall that if $f:A \longrightarrow B$ and $g: B \longrightarrow C$ are functions, then $g \circ f$ is the function whose domain is $A$ and codomain is $C$ defined via
+$$g \circ f (a) = g(f(a)). $$
+
+\begin{problem}
+Let $f:A \longrightarrow B$ and $g:B \longrightarrow C$ be injective functions.  Show that $g \circ f: A \longrightarrow C$ is injective.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Let $f:A \longrightarrow B$ and $g:B \longrightarrow C$ be surjective functions.  Show that $g \circ f: A \longrightarrow C$ is surjective.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Let $f:A \longrightarrow B$ and $g:B \longrightarrow C$ be bijective functions.  Show that $g \circ f: A \longrightarrow C$ is bijective.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+Given a set $A$, we let ${\rm id}_{A}: A \longrightarrow A$ be the function defined via ${\rm id}_{A}(a) = a$.
+
+\begin{problem}
+Let $f:A \longrightarrow B$ and $g:B \longrightarrow A$ be functions.  Show that if $g \circ f = {\rm id}_{A}$, then $f$ is injective and $g$ is surjective.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Let $f:A \longrightarrow B$ be a function.  Show that $f$ is a bijection if and only if there exists a function $g:B \longrightarrow A$ such that
+$$f \circ g = {\rm id}_{B} \text{ and } g \circ f = {\rm id}_{A}.$$
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Let $f:A \longrightarrow B$ be a function and assume that there exists a function $g:B \longrightarrow A$ such that
+$$f \circ g = {\rm id}_{B} \text{ and } g \circ f = {\rm id}_{A}.$$
+Show that $g$ is unique.
+\end{problem}
+
+Thus $f:A \longrightarrow B$ is a bijective function if and only if there exists a function $g:B \longrightarrow A$ such that
+$$f \circ g = {\rm id}_{B} \text{ and } g \circ f = {\rm id}_{A}.$$
+By the last exercise, this function is unique.  We call it the inverse of $f$ and we denote it by $f^{-1}$.
+
+\end{document} 
+
+
+
