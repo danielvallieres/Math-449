@@ -1,0 +1,107 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim}
+\usepackage[margin = 3 cm]{geometry}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution}{\paragraph{\emph{Solution}.}}{\hfill$\square$}
+
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 3]{Homework 3 \\ First due date: September 24.  \\  Due date for the second submission:  October 3.}
+
+\date{\today} 
+\maketitle 
+
+
+\begin{problem}
+Consider the group ${\rm Isom}(\mathbb{E}^{2})$ with its usual binary operation, namely composition of functions.  Consider the function $f:\mathbb{E}^{2} \longrightarrow \mathbb{E}^{2}$ defined via
+$$(x,y) \mapsto f(x,y) = (-1+2x,-1 + 2y). $$
+\begin{enumerate}
+\item Calculate $f(1,1)$.
+\item Calculate $f(0,0),f(1,0)$ and $f(2,0)$.  
+\item Based on your answers above (you can calculate more values if you'd like), can you describe in words what $f$ does?  In other words, what kind of transformation of the euclidean plane is $f$?
+\item Is $f \in {\rm Isom}(\mathbb{E}^{2})$?  If yes, you have to prove this.  Otherwise, explain why not.
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+Consider the group ${\rm Isom}(\mathbb{E}^{2})$ with its usual binary operation, namely composition of functions.  Consider also the function $f:\mathbb{E}^{2} \longrightarrow \mathbb{E}^{2}$ defined via 
+$$f(x,y) = (x+1,y+1). $$
+\begin{enumerate}
+\item Calculate $f(2,3), f(0,0)$ and $f(-3,4)$.
+\item Based on your answers above (you can calculate more values if you'd like), can you describe in words what $f$ does?  In other words, what kind of transformation of the euclidean plane is $f$?
+\item Is $f \in {\rm Isom}(\mathbb{E}^{2})$?  If yes, you have to prove this.  Otherwise, explain why not.
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+Consider the group ${\rm Isom}(\mathbb{E}^{2})$ with its usual binary operation, namely composition of functions.  Assume also that we are given a two-dimensional vector $v = \langle v_{1}, v_{2} \rangle$ for some $v_{1}, v_{2} \in \mathbb{R}$.  We define a function $\tau_{v}:\mathbb{E}^{2} \longrightarrow \mathbb{E}^{2}$ via
+$$(x,y) \mapsto \tau_{v}(x,y) = (x + v_{1},y+v_{2}). $$
+Such a function is called a \emph{translation} by the vector $v$.
+\begin{enumerate}
+\item One of the functions of Problem $1$ or $2$ was a translation.  Can you tell me which one?  Tell me also what was the vector corresponding to that translation.
+\item Show that $\tau_{v} \in {\rm Isom}(\mathbb{E}^{2})$ for all two-dimensional vectors $v = \langle v_{1}, v_{2}\rangle$.
+\item Show that $\tau_{v}^{-1} = \tau_{-v}$ for all two-dimensional vectors $v = \langle v_{1}, v_{2}\rangle$.
+\item Let $f \in {\rm Isom}(\mathbb{E}^{2})$.  Show that there exists a two-dimensional vector $v$ and $\varphi \in {\rm Isom}(\mathbb{E}^{2})$ such that the following two conditions hold:
+\begin{enumerate}
+\item $f = \tau_{v} \circ \varphi$
+\item $\varphi(0,0) = (0,0)$.
+\end{enumerate}
+(Remark:  This last problem is important, since it shows that any isometry of the euclidean plane is of the form ``an isometry fixing the origin followed by a translation''.)
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Let $A$ and $B$ be two finite sets with the same cardinality and let $f:A \longrightarrow B$ be a function.  Show that $f$ is injective if and only if $f$ is surjective.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Assume that $X$ is a finite set with a binary operation $*:X \times X \longrightarrow X$ satisfying the first two group axioms, i.e. associativity and the existence of a neutral element.  Assume furthermore that $X$ satisfies the cancellation laws, namely for any $x,y,z \in X$
+\begin{enumerate}
+\item If $x * y = x * z$, then $y = z$, and
+\item If $y * x = z * x$, then $y = z$.
+\end{enumerate}
+Show that $(X,*)$ is a group. (Hint:  Let $a \in X$ and consider the function $X \longrightarrow X$ defined via $x \mapsto a * x$.  Show that it is injective.  Then, use Problem $4$ to find a right inverse to $a$.  By a similar reasoning, find a left inverse to $a$ and use a problem from hw $2$ to help you out wrapping up the proof...)
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+
+
+
+
+
+
+
+
+\end{document} 
+
+
+
