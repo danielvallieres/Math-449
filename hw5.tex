@@ -1,0 +1,121 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim}
+\usepackage[margin = 3 cm]{geometry}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution}{\paragraph{\emph{Solution}.}}{\hfill$\square$}
+
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 5]{Homework 5 \\ First due date: October 10.  \\  Due date for the second submission:  TBD.}
+
+\date{\today} 
+\maketitle 
+
+
+
+\begin{problem}
+Consider the group $\mathbb{R}$ with its usual binary operation, namely addition, and also the group ${\rm GL}(2,\mathbb{R})$ with its usual binary operation, namely multiplication of matrices.  Consider the function $f:\mathbb{R} \longrightarrow {\rm GL}(2,\mathbb{R})$ defined via
+$$\theta \mapsto f(\theta) =\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}. $$
+\begin{enumerate}
+\item Show that $f$ is a group morphism.
+\item Is $f$ surjective?
+\item Is $f$ injective?
+\item Is $f$ and isomorphism?
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+Let $X$ be the points on the unit circle in $\mathbb{E}^{2}$, i.e.
+$$X = \{(x,y) \in \mathbb{E}^{2} \, | \, x^{2} + y^{2} = 1 \}. $$
+Define a binary operation $\oplus$ on $X$ via
+$$(x_{1},y_{1}) \oplus (x_{2},y_{2}) = (x_{1}y_{2} + x_{2}y_{1},y_{1}y_{2} - x_{1}x_{2}). $$
+Recall that you showed in a previous hw assignment that $(X,\oplus)$ is an abelian group.
+\begin{enumerate}
+\item Show that the function $f:\mathbb{R} \longrightarrow X$ defined via
+$$\theta \mapsto f(\theta) = (\sin\theta,\cos \theta) $$
+is a group morphism.
+\item Is $f$ surjective?
+\item Is $f$ injective?
+\item Is $f$ an isomorphism?
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+\begin{problem}
+Let $G_{1}$ and $G_{2}$ be two groups and assume that $f:G_{1} \longrightarrow G_{2}$ is a group morphism.
+\begin{enumerate}
+\item Show that for all $g_{1} \in G_{1}$ such that ${\rm Ord}(g_{1})$ is finite, one has ${\rm Ord}(f(g_{1})) \, | \, {\rm Ord}(g_{1})$.
+\item Assume furthermore that $f$ is a group isomorphism.  Show that for all $g_{1} \in G_{1}$, one has ${\rm Ord}(f(g_{1})) = {\rm Ord}(g_{1})$.
+\end{enumerate}  
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+The following problem is an important construction of a new group out of two known groups.  It is called the cartesian product of the two groups $G_{1}$ and $G_{2}$.
+\begin{problem}
+Let $G_{1}$ and $G_{2}$ be two groups and for clarity, let us denote the binary operation of $G_{1}$ by $*$ and the binary operation of $G_{2}$ by $\#$.  Consider the cartesian product
+$$G_{1} \times G_{2} = \{(g_{1},g_{2}) \, | \, g_{i} \in G_{i} \text{ for } i=1,2  \}. $$
+Show that $G_{1} \times G_{2}$ endowed with the binary operation $\cdot$ defined via
+$$(g_{1},g_{2}) \cdot (g_{1}',g_{2}') = (g_{1} * g_{1}', g_{2} \# g_{2}') $$
+is a group.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+Make sure you understand the following concepts from Math 330:  \emph{Equivalence relation}, \emph{equivalence class}, \emph{representative}, \emph{partition}.  If you are a little shaky on this matter, pick up your favorite book on basic set theory, then read, learn, and exercise.
+
+\begin{problem}
+Consider the relation $\sim$ on $\mathbb{R}$ defined via $x \sim y$ if $|x| = |y|$.  Answer the following questions:
+\begin{enumerate}
+\item Is $\sim$ an equivalence relation on $\mathbb{R}$?  If yes, prove this, otherwise explain why not.
+\item What is $[-1]$, i.e. what is the equivalence class of $-1$.
+\item Can you give me another representative for the equivalence class $[-1]$?
+\item How many distinct equivalence classes are there?
+\item What is the set $[2] \cap [3]$?
+\item What about the set $[2] \cap [-2]$?
+\item What is the cardinality of each equivalence class?
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+\end{document} 
+
+
+
