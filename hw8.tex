@@ -1,0 +1,161 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim}
+\usepackage[margin = 3 cm]{geometry}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution}{\paragraph{\emph{Solution}.}}{\hfill$\square$}
+
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 8]{Homework 8}
+
+\date{\today} 
+\maketitle 
+
+\begin{problem}
+Let $G$ be a group and let $a, b \in G$.  Assume that $a$ and $b$ commute, that is $ab = ba$.  
+\begin{enumerate}
+\item Prove that if $a^{m} = 1 = b^{n}$ for some integers $m$ and $n$, then $(ab)^{k} = 1$, where $k$ is any common multiple of $m$ and $n$.
+\item With the same setup as above, if $m ={\rm Ord}(a)$ and $n = {\rm Ord}(b)$, then does one have that the order of $ab$ is the least common multiple of $m$ and $n$?  If yes, prove this, otherwise give a counterexample.
+\item Let $G = {\rm GL}(2,\mathbb{R})$ and consider the matrices
+\begin{equation*}
+A =
+\begin{pmatrix}
+0 & -1 \\ 1 & 0
+\end{pmatrix}
+\text{ and }
+B=
+\begin{pmatrix}
+0 & 1 \\ -1 & -1
+\end{pmatrix}
+\end{equation*}
+Find the order of $A$, $B$ and $AB$.
+\item Do $A$ and $B$ commute in $G$?
+\end{enumerate}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+Let $G$ be a group and define the subset
+$$G_{{\rm tor}} = \{g \in G \, | \, {\rm Ord}(g) < \infty \}. $$
+\begin{enumerate}
+\item Show that if $G$ is abelian, then $G_{{\rm tor}} \le G$.  (This subgroup is called the torsion subgroup of $G$.)
+\item Is this statement still true if one drops the hypothesis that $G$ is abelian?  (Hint:  Think about Problem $1$.)
+\end{enumerate}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+Let $G_{1}$ and $G_{2}$ be two groups and let $f:G_{1} \longrightarrow G_{2}$ be a group morphism.  Show that $f$ is injective if and only if
+$${\rm ker}(f) = \{1_{G_{1}}\}. $$
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Consider the function $f:\mathbb{C}^{\times} \longrightarrow {\rm GL}(2,\mathbb{R})$ defined via
+\begin{equation*}
+z = a + bi \mapsto f(z) = 
+\begin{pmatrix}
+a & -b \\
+b & a
+\end{pmatrix}.
+\end{equation*}
+Show that $f$ is an injective group homomorphism.
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+
+For the next problems, you want to review the cartesian product of two groups $G_{1} \times G_{2}$ defined in a previous hw.
+\begin{problem}
+\hspace{1cm}
+\begin{enumerate}
+\item What is the cardinality of $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}$ and of $\mathbb{Z}/4\mathbb{Z}$?  (The group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ is called the Klein four group.)
+\item What are the orders of the elements in $\mathbb{Z}/2\mathbb{Z}\times \mathbb{Z}/2\mathbb{Z}$?  
+\item What are the orders of the elements in $\mathbb{Z}/4\mathbb{Z}$?
+\item Do we have $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}\simeq \mathbb{Z}/4\mathbb{Z}$?  (Hint:  Problem 3 of hw 5 might be handy...)
+\end{enumerate}
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+Let $G_{1}$ and $G_{2}$ be two groups and consider the cartesian product $G_{1} \times G_{2}$.  For $i=1,2$, define the function
+$$\pi_{i}: G_{1} \times G_{2} \longrightarrow G_{i} $$
+via $(g_{1},g_{2}) \mapsto \pi_{i}(g_{1},g_{2}) = g_{i}$.
+\begin{enumerate}
+\item Show that $\pi_{i}$ is a group morphism.
+\item Is $\pi_{i}$ surjective?
+\item What is ${\rm ker}(\pi_{i})$?
+\end{enumerate}
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
+
