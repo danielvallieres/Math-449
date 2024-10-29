@@ -1,0 +1,137 @@
+\documentclass[reqno]{amsart} 
+\usepackage{amssymb,latexsym,amsmath,amscd,graphicx,setspace,amsthm,verbatim}
+\usepackage[margin = 3 cm]{geometry}
+
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{question}{Question}
+\newtheorem{problem}{Problem}
+      
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newenvironment{solution}{\paragraph{\emph{Solution}.}}{\hfill$\square$}
+
+
+\newenvironment{solution1}{\paragraph{\emph{Solution $1$}.}}{\hfill$\square$}
+\newenvironment{solution2}{\paragraph{\emph{Solution $2$}.}}{\hfill$\square$}
+\newenvironment{solution3}{\paragraph{\emph{Solution $3$}.}}{\hfill$\square$}
+
+\begin{document} 
+
+\title[Homework 9]{Homework 9 \\ First due date: November 7.  \\  Due date for the second submission:  TBA.}
+
+\date{\today} 
+\maketitle 
+
+
+\begin{problem}
+Let $G_{1}$ be a group and assume that $G_{1}$ is a cyclic group.  That is $G_{1} = \langle g_{1} \rangle$ for some $g_{1} \in G_{1}$.  Show that if $f:G_{1} \longrightarrow G_{2}$ is a group isomorphism, then $G_{2}$ is also a cyclic group.  
+\end{problem}
+\begin{proof}
+
+\end{proof}
+
+\begin{problem}
+In the following problem, we will play a little bit with the quaternions.  Let $i,j,k$ be three symbols satisfying
+\begin{equation} \label{relation_un}
+i^{2} = j^{2} = k^{2} = -1, ij = k, \text{ and } ij = -ji.
+\end{equation}
+Assume also that for all $x \in \mathbb{R}$, we have 
+\begin{equation} \label{relation_deux}
+xi = ix,
+\end{equation}
+and similarly for $j$ and $k$.  Consider now the set
+$$\mathbb{H} = \{ a + bi + cj + dk \, | \, a,b,c,d \in \mathbb{R}\}.$$
+An element of $\mathbb{H}$ is called a \emph{quaternion}.  We define addition of quaternions as follows:
+$$(a_{1} + b_{1}i + c_{1}j + d_{1}k) + (a_{2} + b_{2}i + c_{2}j + d_{2}k) = (a_{1} + a_{2}) + (b_{1} + b_{2})i + (c_{1} + c_{2})j + (d_{1} + d_{2})k. $$
+Using the \emph{relations} (\ref{relation_un}) and (\ref{relation_deux}) above, we can define a product of quaternions similarly as one does for complex numbers.  For instance, using those relations, we have
+$$ik = iij = -j. $$
+\begin{enumerate}
+\item Similarly, calculate $ki$, $jk$, and $kj$.
+\item Now, calculate
+\begin{enumerate}
+\item $(1 + 3j + k)\cdot (2i -k)$
+\item $(i + k) \cdot (1 + j)$
+\item $(1 + 2i + 3j + k) + (3i - 4j)$
+\end{enumerate}
+\item Define the \emph{conjugate} of a quaternion  $\alpha = a + bi + cj + dk$ as follows:
+$$\overline{\alpha} = a - bi - cj - dk. $$
+Show that $\alpha \overline{\alpha} = \overline{\alpha} \alpha = a^{2} + b^{2} + c^{2} + d^{2}$.
+\item It turns out that $\mathbb{H}$ with the addition and multiplication above is a division ring (I'll let you google what a division ring is).  Going through the axioms is a little tedious (you should do it once though for fun), but I want you to explain at least three things to me:  
+\begin{enumerate}
+\item Is the binary operation $\cdot$ of $\mathbb{H}$ commutative?
+\item Show that if $\alpha \in \mathbb{H}$ is such that $\alpha \neq 0$, then there exists $\beta \in \mathbb{H}$ such that
+$$\alpha \beta = \beta \alpha = 1. $$
+\item Let $\mathbb{H}^{\times} = \mathbb{H} \smallsetminus \{ 0\}$.  Is $(\mathbb{H}^{\times},\cdot)$ a group?  An abelian group? 
+\end{enumerate}
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+\begin{problem}
+Consider $G = \mathbb{H}^{\times}$ and let $H = \{\pm 1, \pm i, \pm j, \pm k \}$.  
+\begin{enumerate}
+\item Show that $H$ is a subgroup of $G$ of order $8$.
+\item What are the order of the elements in $H$?
+\item Is $H$ an abelian group?  Explain.
+\end{enumerate}
+(This finite group is called the quaternion group and is denoted by $Q_{8}$.)
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
+
